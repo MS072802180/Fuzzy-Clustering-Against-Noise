@@ -1,0 +1,33 @@
+# Smoke test: about 1-2 minutes. Same structure as full.yaml.
+out_dir: results/quick
+seeds: 2
+jobs: -1
+datasets: [S1_2d_unequal, segmentation]
+noise_types: [uniform, heavy, rowwise, cellwise]
+levels: [0.0, 0.10]
+methods: [FCM, PFCM, NC, GMM, GMM+noise, t-mixture, AE+FCM, ST-RNC]
+method_params:
+  FCM:       {m: 2.0}
+  PFCM:      {m: 2.0, eta: 2.0, a: 1.0, b: 1.0}
+  NC:        {m: 2.0, lam: 0.5}
+  t-mixture: {estimate_nu: true}
+  AE+FCM:    {steps: 500, batch_size: 256, m: 2.0}
+  ST-RNC:    {m_grid: [1.2, 1.5, 2.0], q: 0.99, rule: xb}   # proposed model; fixed on the development suite
+ablation:
+  level: 0.10
+  seeds: 1
+  m:   [1.1, 1.5, 2.0]
+  eta: [1.5, 2.0, 4.0]
+  ab:  [[1.0, 1.0], [1.0, 3.0]]
+  c_offsets: [-2, -1, 0, 1, 2]
+  c_methods: [FCM, PFCM, NC, GMM, GMM+noise, ST-RNC]
+  c_noise:   [none, uniform]
+  # component ablation of the proposed ST-RNC (same conditions and seeds as the main run)
+  components: [NC, RNC, ST-NC, ST-RNC]
+  c_seeds:   1
+diagnostics:
+  heatmap: S1_2d_unequal
+  outliers: S1_2d_unequal
+  partitions: [segmentation]
+  convergence: [S1_2d_unequal, segmentation]
+  ae_latent: segmentation

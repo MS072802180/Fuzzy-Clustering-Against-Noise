@@ -1,0 +1,36 @@
+# Main study: seven real datasets with 2,000-10,992 samples (bundled, from PMLB,
+# checksum-verified). 7 datasets x (clean + 4 noise types x 3 levels) x 5 seeds x 8 methods = 3,640 fits,
+# plus the ablations. About 6 h in total on 2 CPU cores; scales down almost linearly with cores.
+out_dir: results/full
+seeds: 5
+jobs: -1                      # -1 = all CPU cores
+datasets: [waveform, segmentation, satimage, optdigits, pendigits, texture, mfeat_factors]
+noise_types: [uniform, heavy, rowwise, cellwise]
+levels: [0.0, 0.05, 0.10, 0.20]          # contamination level r
+methods: [FCM, PFCM, NC, GMM, GMM+noise, t-mixture, AE+FCM, ST-RNC]
+method_params:                # defaults are the canonical settings from each method's original publication
+  FCM:       {m: 2.0}
+  PFCM:      {m: 2.0, eta: 2.0, a: 1.0, b: 1.0}
+  NC:        {m: 2.0, lam: 0.5}  # lam tuned on the small synthetic S1 data only
+  t-mixture: {estimate_nu: true}
+  AE+FCM:    {steps: 2000, batch_size: 256, m: 2.0}   # fixed budget of 2,000 mini-batch updates
+  ST-RNC:    {m_grid: [1.2, 1.5, 2.0], q: 0.99, rule: xb}   # proposed model; fixed on the development suite
+ablation:                     # PFCM parameter grid and label-free selection
+  level: 0.10
+  seeds: 3
+  m:   [1.1, 1.3, 1.5, 2.0, 3.0]
+  eta: [1.5, 2.0, 3.0, 4.0]
+  ab:  [[1.0, 1.0], [1.0, 3.0], [3.0, 1.0]]
+  # number-of-clusters sweep (c = true c + offset), on clean data and the noise types below
+  c_offsets: [-2, -1, 0, 1, 2]
+  c_methods: [FCM, PFCM, NC, GMM, GMM+noise, ST-RNC]
+  c_noise:   [none, uniform]
+  # component ablation of the proposed ST-RNC (same conditions and seeds as the main run)
+  components: [NC, RNC, ST-NC, ST-RNC]
+  c_seeds:   3
+diagnostics:                  # datasets used for the single-run illustration figures
+  heatmap: satimage
+  outliers: satimage
+  partitions: [waveform, satimage]
+  convergence: [waveform, pendigits]
+  ae_latent: satimage
