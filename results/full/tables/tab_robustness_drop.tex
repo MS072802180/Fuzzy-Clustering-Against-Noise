@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Robustness drop (clean ARI $-$ noisy ARI), mean over datasets and seeds; smallest drop per row in bold}
+\label{tab:drop}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Noise, $r$ & FCM & PFCM & NC & GMM & GMM+noise & t-mixture & AE+FCM & ST-RNC \\
+\midrule
+Cellwise, 0.05 & 0.027 & 0.067 & 0.032 & 0.103 & 0.150 & 0.047 & \textbf{0.004} & 0.020 \\
+Cellwise, 0.10 & 0.059 & 0.093 & 0.069 & 0.127 & 0.165 & 0.131 & \textbf{0.013} & 0.036 \\
+Cellwise, 0.20 & 0.079 & 0.097 & 0.094 & 0.231 & 0.276 & 0.199 & 0.095 & \textbf{0.073} \\
+Heavy-tailed, 0.05 & 0.018 & 0.061 & 0.026 & 0.141 & 0.187 & 0.036 & \textbf{-0.016} & 0.015 \\
+Heavy-tailed, 0.10 & 0.030 & 0.074 & 0.037 & 0.171 & 0.217 & 0.059 & \textbf{-0.010} & 0.027 \\
+Heavy-tailed, 0.20 & 0.055 & 0.058 & 0.062 & 0.251 & 0.295 & 0.135 & \textbf{0.024} & 0.024 \\
+Row-wise, 0.05 & 0.033 & 0.082 & 0.042 & 0.181 & 0.218 & 0.085 & \textbf{0.002} & 0.033 \\
+Row-wise, 0.10 & 0.073 & 0.088 & 0.087 & 0.278 & 0.323 & 0.192 & \textbf{0.045} & 0.063 \\
+Row-wise, 0.20 & 0.117 & 0.125 & 0.131 & 0.335 & 0.383 & 0.296 & 0.117 & \textbf{0.110} \\
+Uniform background, 0.05 & 0.033 & 0.066 & 0.041 & 0.090 & 0.136 & 0.117 & \textbf{0.000} & 0.039 \\
+Uniform background, 0.10 & 0.055 & 0.076 & 0.080 & 0.119 & 0.160 & 0.126 & \textbf{0.021} & 0.043 \\
+Uniform background, 0.20 & 0.099 & 0.058 & 0.082 & 0.161 & 0.208 & 0.185 & 0.098 & \textbf{0.054} \\
+\bottomrule
+\end{tabular}
+\end{table*}

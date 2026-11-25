@@ -1,0 +1,27 @@
+config: configs/full.yaml
+output: /home/claude/fuzzy-noise-benchmark/results/full
+steps:  run
+
+=== 1/4  main benchmark ===
+455 data conditions to run (3640 fits), jobs=-1
+  22/455 conditions written
+  44/455 conditions written
+  66/455 conditions written
+  88/455 conditions written
+  110/455 conditions written
+  132/455 conditions written
+  154/455 conditions written
+  176/455 conditions written
+  198/455 conditions written
+  220/455 conditions written
+  242/455 conditions written
+  264/455 conditions written
+  286/455 conditions written
+  308/455 conditions written
+  330/455 conditions written
+  352/455 conditions written
+  374/455 conditions written
+/usr/local/lib/python3.13/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 8 leaked semlock objects to clean up at shutdown: {'/loky-303-kqk10b68': 1, '/loky-303-4u4skh6l': 1, '/loky-303-bewif82w': 1, '/loky-303-08v5zsm6': 1, '/loky-303-o6n85fia': 1, '/loky-303-371q9lul': 1, '/loky-303-9veta7v2': 1, '/loky-303-4e3ul455': 1}
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 19 leaked folder objects to clean up at shutdown: {'/dev/shm/joblib_memmapping_folder_303_f37422c92cf44433949e00d5a0d25e1b_df64028f3ffe485995b2ca6230667e0c': 1, '/dev/shm/joblib_memmapping_folder_303_23647914f9f94b888a5def5c7e205a21_b081becbddad4b54a760d10f2e11ec63': 1, '/dev/shm/joblib_memmapping_folder_303_def2f838ebde49898cab84ba548b6dcb_fb4cbe361ee847e895cc9b93a7859802': 1, '/dev/shm/joblib_memmapping_folder_303_1e89eacb0df24a579ab19dd9c388f3f4_ea0381954e454f0999fe2f0e46b30cc6': 1, '/dev/shm/joblib_memmapping_folder_303_f7cf78cf277b413eaa07f2570a90040e_c84c2682f51f4aa295b36243c8f779c7': 1, '/dev/shm/joblib_memmapping_folder_303_4ce19c519552472d88e31a044d185436_bfdb3e49985c4240a88a414150bef765': 1, '/dev/shm/joblib_memmapping_folder_303_c8ca911b0bc54acbadb0b2058df189e4_465b117c900d49539f70a271d7cbdf71': 1, '/dev/shm/joblib_memmapping_folder_303_2ce1363726cf43c293c5867501dcd630_082e8516a7254642be99c55fcde9239f': 1, '/dev/shm/joblib_memmapping_folder_303_aab7a7ca7a9a481a8d45e2f5632f07b8_4be332721344467bae1cf638cfb59035': 1, '/dev/shm/joblib_memmapping_folder_303_8e9d98da4c6c431ebfee262c5598da70_ac4fc590780547928c210d74650bafca': 1, '/dev/shm/joblib_memmapping_folder_303_b3e1a4d486cd4a66a3a9a355a5d656ef_e42f7fd9e8c340b7ae1cf9f87005308e': 1, '/dev/shm/joblib_memmapping_folder_303_05eceb2acc3248c5838bb0d18b6c44c1_5e70861202fd459fb51c81b9a3c6ecc3': 1, '/dev/shm/joblib_memmapping_folder_303_45f647eb19eb4fdfa256b11ee25bbd99_8ac2e5c644f3477a8fc98cf921efe1b7': 1, '/dev/shm/joblib_memmapping_folder_303_15ff5e15f2c04bb9ab15506c555badea_1c27b7424d574385a81df7c580428533': 1, '/dev/shm/joblib_memmapping_folder_303_b76bb6d7c7b94a2d8904be4a4f8fff50_67495b405c0240c09356085397bd2eff': 1, '/dev/shm/joblib_memmapping_folder_303_50f70409d41b49ed88680485c54b8fb1_1502fde607954a7d8fd07d0e20c949e4': 1, '/dev/shm/joblib_memmapping_folder_303_955c8e7af3f94678ad4aafc007f8033e_5744a5cf5b7a49a68046820844226af8': 1, '/dev/shm/joblib_memmapping_folder_303_eedaf527ea6b41a585a50f9a72098640_757789df031d40fe8126d84c70fb1391': 1, '/dev/shm/joblib_memmapping_folder_303_f37422c92cf44433949e00d5a0d25e1b_dd29b7608d1b4cf7900619dc2361e685': 1}
+  warnings.warn(

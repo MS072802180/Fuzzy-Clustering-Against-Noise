@@ -1,0 +1,40 @@
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 2 concurrent workers.
+ablation: 84 conditions x 60 settings
+[Parallel(n_jobs=-1)]: Done  14 tasks      | elapsed:  3.6min
+[Parallel(n_jobs=-1)]: Done  68 tasks      | elapsed: 43.1min
+[Parallel(n_jobs=-1)]: Done  84 out of  84 | elapsed: 51.3min finished
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  14 tasks      | elapsed:  2.6min
+[Parallel(n_jobs=-1)]: Done  42 out of  42 | elapsed: 26.6min finished
+               oracle  default  neg_xie_beni  silhouette  trimmed_silhouette  worst
+dataset                                                                            
+mfeat_factors   0.593    0.110         0.586       0.247               0.579  0.088
+optdigits       0.503    0.073         0.458       0.151               0.406  0.049
+pendigits       0.521    0.112         0.424       0.316               0.471  0.088
+satimage        0.518    0.326         0.503       0.497               0.515  0.236
+segmentation    0.467    0.245         0.449       0.365               0.449  0.185
+texture         0.431    0.166         0.410       0.399               0.411  0.125
+waveform        0.357    0.243         0.249       0.341               0.344  0.213
+MEAN            0.484    0.182         0.440       0.331               0.453  0.141
+c-ablation: 42 conditions x 6 methods x 5 values of c
+
+fraction of runs in which the index recovers the true c:
+noise                        none  uniform
+method    rule                            
+FCM       FPC (max)         0.000    0.000
+          Silhouette (max)  0.238    0.238
+          Xie-Beni (min)    0.190    0.238
+GMM       BIC (min)         0.095    0.143
+          FPC (max)         0.190    0.095
+          Silhouette (max)  0.143    0.048
+GMM+noise FPC (max)         0.143    0.000
+          Silhouette (max)  0.143    0.095
+NC        FPC (max)         0.048    0.000
+          Silhouette (max)  0.048    0.095
+          Xie-Beni (min)    0.143    0.143
+PFCM      FPC (max)         0.000    0.000
+          Silhouette (max)  0.286    0.095
+          Xie-Beni (min)    0.000    0.095
+ST-RNC    FPC (max)         0.095    0.048
+          Silhouette (max)  0.143    0.048
+EXIT 0

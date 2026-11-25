@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Mean partition coefficient (FPC; 1 = crisp) and iterations to convergence, on clean and on noisy data}
+\label{tab:fpc}
+\begin{tabular}{lrrrr}
+\toprule
+Method & FPC (noisy) & FPC (clean) & Iterations (noisy) & Iterations (clean) \\
+\midrule
+FCM & 0.257 & 0.267 & 119.783 & 111.457 \\
+PFCM & 0.154 & 0.200 & 37.279 & 52.143 \\
+NC & 0.214 & 0.201 & 62.940 & 45.543 \\
+GMM & 0.988 & 0.984 & 25.867 & 29.600 \\
+GMM+noise & 0.968 & 0.966 & 28.074 & 33.057 \\
+t-mixture & 0.981 & 0.967 & 119.795 & 93.743 \\
+AE+FCM & 0.308 & 0.288 & 141.929 & 137.857 \\
+ST-RNC & 0.393 & 0.413 & 75.750 & 60.829 \\
+\bottomrule
+\end{tabular}
+\end{table}

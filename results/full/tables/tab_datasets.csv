@@ -1,0 +1,8 @@
+Dataset,$n$,$d$,$c$,Source
+waveform,5000,21,3,"UCI Waveform Database Generator (Version 1), 5,000 x 21, 3 classes (via PMLB)"
+segmentation,2310,18,7,"UCI Image Segmentation, 2,310 x 19, 7 classes (via PMLB)"
+satimage,6435,36,6,"UCI Statlog (Landsat Satellite), 6,435 x 36, 6 classes (via PMLB)"
+optdigits,5620,62,10,"UCI Optical Recognition of Handwritten Digits (full), 5,620 x 64, 10 classes (via PMLB)"
+pendigits,10992,16,10,"UCI Pen-Based Recognition of Handwritten Digits, 10,992 x 16, 10 classes (via PMLB)"
+texture,5500,40,11,"Texture (ELENA project, via KEEL), 5,500 x 40, 11 classes (via PMLB)"
+mfeat\_factors,2000,216,10,"UCI Multiple Features, profile correlations view, 2,000 x 216, 10 classes (via PMLB)"

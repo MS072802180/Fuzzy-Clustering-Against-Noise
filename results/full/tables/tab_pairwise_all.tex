@@ -1,0 +1,42 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{All pairwise Wilcoxon signed-rank tests on ARI (Holm-corrected)}
+\label{tab:pairwise}
+\begin{tabular}{llrrrrr}
+\toprule
+A & B & ARI A & ARI B & A wins & B wins & $p$ (Holm) \\
+\midrule
+FCM & GMM & 0.308 & 0.334 & 50 & 34 & 1.000 \\
+NC & GMM+noise & 0.312 & 0.338 & 50 & 34 & 1.000 \\
+PFCM & t-mixture & 0.184 & 0.391 & 10 & 74 & $<$0.001 \\
+FCM & PFCM & 0.308 & 0.184 & 80 & 4 & $<$0.001 \\
+PFCM & ST-RNC & 0.184 & 0.479 & 7 & 77 & $<$0.001 \\
+PFCM & NC & 0.184 & 0.312 & 6 & 78 & $<$0.001 \\
+PFCM & AE+FCM & 0.184 & 0.362 & 9 & 75 & $<$0.001 \\
+GMM & ST-RNC & 0.334 & 0.479 & 11 & 73 & $<$0.001 \\
+GMM+noise & ST-RNC & 0.338 & 0.479 & 13 & 71 & $<$0.001 \\
+AE+FCM & ST-RNC & 0.362 & 0.479 & 12 & 72 & $<$0.001 \\
+FCM & ST-RNC & 0.308 & 0.479 & 19 & 65 & $<$0.001 \\
+NC & ST-RNC & 0.312 & 0.479 & 21 & 63 & $<$0.001 \\
+PFCM & GMM+noise & 0.184 & 0.338 & 23 & 61 & $<$0.001 \\
+PFCM & GMM & 0.184 & 0.334 & 24 & 60 & $<$0.001 \\
+t-mixture & ST-RNC & 0.391 & 0.479 & 26 & 58 & $<$0.001 \\
+GMM & t-mixture & 0.334 & 0.391 & 19 & 65 & $<$0.001 \\
+FCM & t-mixture & 0.308 & 0.391 & 33 & 51 & $<$0.001 \\
+GMM+noise & t-mixture & 0.338 & 0.391 & 21 & 63 & 0.001 \\
+NC & t-mixture & 0.312 & 0.391 & 33 & 51 & 0.001 \\
+GMM & GMM+noise & 0.334 & 0.338 & 28 & 45 & 0.091 \\
+GMM & AE+FCM & 0.334 & 0.362 & 36 & 48 & 0.629 \\
+t-mixture & AE+FCM & 0.391 & 0.362 & 45 & 39 & 0.629 \\
+FCM & AE+FCM & 0.308 & 0.362 & 47 & 37 & 0.813 \\
+GMM+noise & AE+FCM & 0.338 & 0.362 & 38 & 46 & 0.813 \\
+NC & AE+FCM & 0.312 & 0.362 & 48 & 36 & 0.883 \\
+FCM & NC & 0.308 & 0.312 & 45 & 39 & 1.000 \\
+FCM & GMM+noise & 0.308 & 0.338 & 50 & 34 & 1.000 \\
+NC & GMM & 0.312 & 0.334 & 50 & 34 & 1.000 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{\linewidth}{\footnotesize Blocks (dataset x noise type x contamination level > 0): N = 84; Methods: k = 8; Friedman chi2 = 184.93, p = 1.77e-36; Nemenyi critical difference (alpha = 0.05): CD = 1.146}
+\end{table}

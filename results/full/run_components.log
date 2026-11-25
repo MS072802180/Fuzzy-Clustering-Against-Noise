@@ -1,0 +1,15 @@
+component ablation: 455 conditions x ['RNC', 'ST-NC']
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  37 tasks      | elapsed:   20.5s
+[Parallel(n_jobs=-1)]: Done 158 tasks      | elapsed:  1.7min
+[Parallel(n_jobs=-1)]: Done 361 tasks      | elapsed:  9.2min
+[Parallel(n_jobs=-1)]: Done 455 out of 455 | elapsed: 12.3min finished
+
+component ablation (mean ARI; noise columns at r = 0.20):
+noise   clean  cellwise  heavy  rowwise  uniform  all noisy
+method                                                     
+NC      0.377     0.283  0.315    0.246    0.295      0.312
+RNC     0.378     0.288  0.327    0.251    0.320      0.321
+ST-NC   0.512     0.436  0.470    0.402    0.373      0.452
+ST-RNC  0.524     0.450  0.499    0.414    0.470      0.479
+EXIT 0

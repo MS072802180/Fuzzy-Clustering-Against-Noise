@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Mechanism pairs across paradigms: Wilcoxon signed-rank tests on condition means, Holm-corrected}
+\label{tab:pairs}
+\begin{tabular}{lllrrrrr}
+\toprule
+Pair & A & B & ARI A & ARI B & A wins & B wins & $p$ (Holm) \\
+\midrule
+unconstrained baselines & FCM & GMM & 0.308 & 0.334 & 50 & 34 & 1.000 \\
+noise cluster vs noise component & NC & GMM+noise & 0.312 & 0.338 & 50 & 34 & 1.000 \\
+down-weighting by typicality vs heavy-tailed likelihood & PFCM & t-mixture & 0.184 & 0.391 & 10 & 74 & $<$0.001 \\
+\bottomrule
+\end{tabular}
+\end{table*}

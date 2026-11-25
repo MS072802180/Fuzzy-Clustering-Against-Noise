@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Fraction of runs in which a label-free index recovers the true number of clusters ($c \in$ true $c \pm 2$)}
+\label{tab:c-selection}
+\begin{tabular}{lrr}
+\toprule
+Method, index & clean & uniform \\
+\midrule
+FCM, FPC (max) & 0.000 & 0.000 \\
+FCM, Silhouette (max) & 0.238 & 0.238 \\
+FCM, Xie-Beni (min) & 0.190 & 0.238 \\
+GMM, BIC (min) & 0.095 & 0.143 \\
+GMM, FPC (max) & 0.190 & 0.095 \\
+GMM, Silhouette (max) & 0.143 & 0.048 \\
+GMM+noise, FPC (max) & 0.143 & 0.000 \\
+GMM+noise, Silhouette (max) & 0.143 & 0.095 \\
+NC, FPC (max) & 0.048 & 0.000 \\
+NC, Silhouette (max) & 0.048 & 0.095 \\
+NC, Xie-Beni (min) & 0.143 & 0.143 \\
+PFCM, FPC (max) & 0.000 & 0.000 \\
+PFCM, Silhouette (max) & 0.286 & 0.095 \\
+PFCM, Xie-Beni (min) & 0.000 & 0.095 \\
+ST-RNC, FPC (max) & 0.095 & 0.048 \\
+ST-RNC, Silhouette (max) & 0.143 & 0.048 \\
+\bottomrule
+\end{tabular}
+\end{table}

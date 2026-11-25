@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Mean ARI at contamination $r$ = 0.20 over all datasets and seeds, and average rank over all noisy conditions (lower rank is better)}
+\label{tab:ari}
+\begin{tabular}{lrrrrr}
+\toprule
+Method & Uniform & Heavy & Row-wise & Cellwise & Avg. rank \\
+\midrule
+FCM & 0.27 (0.16) & 0.31 (0.16) & 0.25 (0.12) & 0.29 (0.13) & 4.14 \\
+PFCM & 0.20 (0.14) & 0.20 (0.12) & 0.14 (0.07) & 0.17 (0.10) & 7.01 \\
+NC & 0.30 (0.17) & 0.32 (0.16) & 0.25 (0.12) & 0.28 (0.13) & 4.20 \\
+GMM & 0.36 (0.18) & 0.27 (0.18) & 0.18 (0.14) & 0.29 (0.14) & 5.29 \\
+GMM+noise & 0.36 (0.18) & 0.27 (0.18) & 0.18 (0.14) & 0.29 (0.14) & 5.01 \\
+t-mixture & 0.34 (0.18) & 0.39 (0.23) & 0.23 (0.11) & 0.33 (0.14) & 3.54 \\
+AE+FCM & 0.30 (0.12) & 0.37 (0.14) & 0.28 (0.11) & 0.30 (0.12) & 4.51 \\
+ST-RNC & \textbf{0.47 (0.16)} & \textbf{0.50 (0.12)} & \textbf{0.41 (0.11)} & \textbf{0.45 (0.13)} & \textbf{2.30} \\
+\bottomrule
+\end{tabular}
+\end{table}

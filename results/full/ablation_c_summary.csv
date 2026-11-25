@@ -1,0 +1,17 @@
+method,rule,none,uniform
+FCM,FPC (max),0.0,0.0
+FCM,Silhouette (max),0.238,0.238
+FCM,Xie-Beni (min),0.19,0.238
+GMM,BIC (min),0.095,0.143
+GMM,FPC (max),0.19,0.095
+GMM,Silhouette (max),0.143,0.048
+GMM+noise,FPC (max),0.143,0.0
+GMM+noise,Silhouette (max),0.143,0.095
+NC,FPC (max),0.048,0.0
+NC,Silhouette (max),0.048,0.095
+NC,Xie-Beni (min),0.143,0.143
+PFCM,FPC (max),0.0,0.0
+PFCM,Silhouette (max),0.286,0.095
+PFCM,Xie-Beni (min),0.0,0.095
+ST-RNC,FPC (max),0.095,0.048
+ST-RNC,Silhouette (max),0.143,0.048

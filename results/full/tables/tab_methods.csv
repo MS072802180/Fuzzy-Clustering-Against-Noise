@@ -1,0 +1,9 @@
+Method,Paradigm,Mechanism,Default parameters,Reference
+FCM,fuzzy,baseline,$m=2$,Bezdek 1981
+PFCM,fuzzy,M1 relaxed memberships,"$m=\eta=2$, $a=b=1$",Pal et al. 2005
+NC,fuzzy,M3 explicit outlier handling,"$m=2$, $\lambda=0.5$",Dav\'e 1991
+GMM,probabilistic,baseline,"full cov., 5 inits",Dempster et al. 1977
+GMM+noise,probabilistic,M3 explicit outlier handling,"uniform comp., init. share 0.05",Banfield \& Raftery 1993
+t-mixture,probabilistic,M2 heavy-tailed likelihood,$\nu$ estimated,Peel \& McLachlan 2000
+AE+FCM,neural/hybrid,M4 regularized structure,"MLP 128-64-$z$, 2,000 steps",Hinton \& Salakhutdinov 2006 + FCM
+ST-RNC,fuzzy,M3 explicit outlier handling (proposed),"$q=0.99$, $m\in\{1.2,1.5,2\}$",proposed (this work)

@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Mean ARI on clean data (no noise), 10 seeds; best per row in bold}
+\label{tab:clean}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Dataset & FCM & PFCM & NC & GMM & GMM+noise & t-mixture & AE+FCM & ST-RNC \\
+\midrule
+mfeat\_factors & 0.146 & 0.101 & 0.144 & 0.625 & 0.625 & 0.221 & 0.304 & \textbf{0.646} \\
+optdigits & 0.181 & 0.109 & 0.167 & 0.431 & 0.445 & 0.437 & 0.194 & \textbf{0.595} \\
+pendigits & 0.476 & 0.140 & 0.499 & 0.608 & 0.612 & \textbf{0.652} & 0.603 & 0.551 \\
+satimage & 0.533 & 0.488 & 0.533 & 0.467 & 0.467 & 0.475 & 0.470 & \textbf{0.536} \\
+segmentation & 0.495 & 0.301 & 0.552 & 0.455 & 0.448 & 0.488 & 0.456 & \textbf{0.554} \\
+texture & 0.472 & 0.235 & 0.478 & 0.772 & 0.775 & \textbf{0.825} & 0.485 & 0.536 \\
+waveform & 0.247 & 0.464 & 0.267 & 0.255 & \textbf{0.578} & 0.575 & 0.248 & 0.248 \\
+Mean & 0.364 & 0.262 & 0.377 & 0.516 & \textbf{0.564} & 0.525 & 0.394 & 0.524 \\
+\bottomrule
+\end{tabular}
+\end{table*}

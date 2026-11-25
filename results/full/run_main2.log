@@ -1,0 +1,34 @@
+config: configs/full.yaml
+output: /home/claude/fuzzy-noise-benchmark/results/full
+steps:  run
+
+=== 1/4  main benchmark ===
+resuming: 2992 fits already in /home/claude/fuzzy-noise-benchmark/results/full/raw_results.csv (use --fresh to start over)
+81 data conditions to run (648 fits), jobs=-1
+  4/81 conditions written
+  8/81 conditions written
+  12/81 conditions written
+  16/81 conditions written
+  20/81 conditions written
+  24/81 conditions written
+  28/81 conditions written
+  32/81 conditions written
+  36/81 conditions written
+  40/81 conditions written
+  44/81 conditions written
+  48/81 conditions written
+  52/81 conditions written
+  56/81 conditions written
+  60/81 conditions written
+  64/81 conditions written
+  68/81 conditions written
+  72/81 conditions written
+  76/81 conditions written
+  80/81 conditions written
+  81/81 conditions written
+done -> /home/claude/fuzzy-noise-benchmark/results/full/raw_results.csv
+
+Finished in 104 min 41 s. Open:
+  /home/claude/fuzzy-noise-benchmark/results/full/REPORT.md
+  /home/claude/fuzzy-noise-benchmark/results/full/all_figures_and_tables.pdf
+EXIT 0
